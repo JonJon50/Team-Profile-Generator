@@ -11,3 +11,10 @@ test("Can instantiate Engineer instance", () => {
     const emp = new Engineer("John", 1, "john@mail.com");
     expect(emp.getRole()).toBe(expectedValue);
 });
+
+
+test("Can get GitHub username via getGithub()", () => {
+    const expectedValue = "myGitHubUserName";
+    const emp = new Engineer("John", 1, "john@mail.com", expectedValue);
+    expect(emp.getGithub()).toBe(expectedValue);
+  });
