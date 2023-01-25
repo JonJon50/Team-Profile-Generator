@@ -16,5 +16,5 @@ test("Can instantiate Manager instance", () => {
 test("Can get GitHub username via getGithub()", () => {
     const expectedValue = "UCF";
     const emp = new Manager("John", 1, "john@mail.com", expectedValue);
-    expect(emp.getSchool()).toBe(expectedValue);
+    expect(emp.getOfficeNumber()).toBe(expectedValue);
   });
