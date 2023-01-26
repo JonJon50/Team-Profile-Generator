@@ -9,7 +9,7 @@ const generateHTML = (answersArr) => {
   <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h3 class="card-title text-center" id="name">${answersArr[i].name}</h3>
-      <h5 id="role" class="text-center"><i class="fas fa-user-ninja"></i> ${answersArr[
+      <h5 id="role" class="text-center bg-light text-wrap rounded-pill"><i class="fas fa-user-ninja"></i> ${answersArr[
         i
       ].getRole()}</h5>
     </div>
@@ -33,7 +33,7 @@ const generateHTML = (answersArr) => {
   <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h3 class="card-title text-center" id="name">${answersArr[i].name}</h3>
-      <h5 id="role" class="text-center"><i class="fas fa-user-graduate"></i> ${answersArr[
+      <h5 id="role" class="text-center bg-light text-wrap rounded-pill"><i class="fas fa-user-graduate"></i> ${answersArr[
         i
       ].getRole()}</h5>
     </div>
@@ -85,7 +85,7 @@ const generateHTML = (answersArr) => {
  <div class="card text shadow-lg  bg-body rounded" style="width: 18rem;">
         <div class="card-body">
          <h3 class="card-title text-center" id="name">${answersArr[0].name}</h3>
-         <h5 id="role" class="text-center"><i class="fas fa-user-tie"></i> Manager</h5>
+         <h5 id="role" class="text-center bg-light text-wrap rounded-pill"><i class="fas fa-user-tie"></i> Manager</h5>
         </div>
          <ul class="list-group list-group-flush">
          <li class="list-group-item" id="id">ID: ${answersArr[0].id}</li>
