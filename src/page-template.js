@@ -70,34 +70,35 @@ const generateHTML = (answersArr) => {
       <title>Team Profile</title>
     </head>
     <body>
-      <!-- jumbotron -->
-      <div id="jumbotron" class="jumbotron jumbotron-fluid">
+      
+    <!-- jumbotron -->
+       <div  class="text-center jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-1">The Dream Team</h1>
-        </div>
+         <h1 class="display-1 border border-light rounded-pill shadow p-3 mb-5 bg-body rounded" >Team Workforce</h1>
+      </div>
       </div>
       <!-- card container -->
-      <div class="container" id="card-container">
+        <div class="container" id="card-container">
         <div class="row">
-          <div class="card-area col-12 d-flex justify-content-center mt-5">
+        <div class="card-area col-12 d-flex justify-content-center mt-5">
   <!-- Manager card -->
-  <div class="card text" style="width: 18rem;">
-    <div class="card-body">
-      <h3 class="card-title text-center" id="name">${answersArr[0].name}</h3>
-      <h5 id="role" class="text-center"><i class="fas fa-user-tie"></i> Manager</h5>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item" id="id">ID: ${answersArr[0].id}</li>
-      <li class="list-group-item" id="email"><a href="mailto:${answersArr[0].email}">Email: ${answersArr[0].email}</a></li>
-      <li class="list-group-item" id="officeNum">Office number: ${answersArr[0].officeNum}</li>
-    </ul>
-  </div>
+ <div class="card text shadow-lg  bg-body rounded" style="width: 18rem;">
+        <div class="card-body">
+         <h3 class="card-title text-center" id="name">${answersArr[0].name}</h3>
+         <h5 id="role" class="text-center"><i class="fas fa-user-tie"></i> Manager</h5>
+        </div>
+         <ul class="list-group list-group-flush">
+         <li class="list-group-item" id="id">ID: ${answersArr[0].id}</li>
+         <li class="list-group-item" id="email"><a href="mailto:${answersArr[0].email}">Email: ${answersArr[0].email}</a></li>
+         <li class="list-group-item" id="officeNum">Office number: ${answersArr[0].officeNumber}</li>
+         </ul>
+        </div>
   ${newCard}
-          </div>
+         </div>
         </div>
       </div>
     </body>
-    </html>`;
+  </html>`;
 };
 
 module.exports = generateHTML;

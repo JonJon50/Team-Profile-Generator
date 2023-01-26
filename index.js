@@ -42,18 +42,29 @@ if (answers.role === "Manager") {
   const managerAns = await inquirer.prompt([
     {
       type: "input",
-      message: "What is you office number?",
+      message: "What is your office number?",
       name: "officeNumber",
     },
-  ]);
-  const newManager = new Manager(
-    answers.name,
-    answers.id,
-    answers.email,
-    answers.officeNumber
-  );
-  newStaffMemberData.push(newManager);
-promptQuestions()
+  ])
+  .then((data) => {
+    console.log(data.officeNumber)
+    const newManager = new Manager(
+      answers.name,
+      answers.id,
+      answers.email,
+      data.officeNumber
+    );
+    newStaffMemberData.push(newManager);
+  promptQuestions()
+  })
+//  // const newManager = new Manager(
+//    // answers.name,
+//     answers.id,
+//     answers.email,
+//     answers.officeNumber
+//   );
+//   newStaffMemberData.push(newManager);
+// promptQuestions()
   // if engineer selected answer these set questions
 } else if (answers.role === "Engineer") {
   const githubAns = await inquirer.prompt([
@@ -94,17 +105,21 @@ promptQuestions()
  async function promptQuestions() { 
  const addMemberAns = await inquirer.prompt([
     {
-      name: "addMemberAns",
+      name: "addMember",
       type: "list",
       choices: ["Add a new member", "Create team"],
       message: "What would you like to do next?",
     },
   ]);
- if (addMemberAns.addMember === "Add a new member") {
-     questions();
+    if (addMemberAns.addMember === "Add a new member") {
+     console.log("This add a new member")
+      questions();
 }
-     createTeam();
-}
+    if(addMemberAns.addMember === "Create team"){
+      console.log("This create team")
+      createTeam();
+    }
+    }
  
 function createTeam() {
   fs.writeFileSync(
