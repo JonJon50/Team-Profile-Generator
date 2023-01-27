@@ -1,8 +1,8 @@
 
-<h1 align="center">Team Profile Generator</h1>
+<h1 align="center">Team Workforce</h1>
 
 ![alt](https://img.shields.io/badge/License-MIT-blue)
-<p align="center">Team Workforce</p>
+<p align="center">Tech Worker Generator</p>
 
 <p align="center">ScreenShots 🏆</p>
 

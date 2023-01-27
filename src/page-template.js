@@ -67,7 +67,7 @@ const generateHTML = (answersArr) => {
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="./style.css" />
       <script src="https://kit.fontawesome.com/3ff242710e.js" crossorigin="anonymous"></script>
-      <title>Team Profile</title>
+      <title>Team Workforce</title>
     </head>
     <body>
       
