@@ -30,13 +30,13 @@
 ![Photo4](./images/Cell%20Phone%20Responsive.png)
 
 
-## <h2 id="installation"> Installation </h2>
+<h2 id="installation">Installation</h2>
 
 Go to the internet, type in Team Profile Generator and to inspect and check it out.
 
 <br>
 
-## <h2 id="usage"> Usage </h2>
+ <h2 id="usage">Usage</h2>
 
 1. Navigate to the terminal.
 2. Here you will be asked a series of questions, navigate to '**Node**'. 
