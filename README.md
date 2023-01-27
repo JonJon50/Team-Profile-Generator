@@ -45,9 +45,9 @@ Go to the internet, type in Team Profile Generator and to inspect and check it o
 5. When it comes to NPM testing, type in '**npm run test**' and let run out.
 6. Now build your **Dream Team!**
 
-Click here to view video demonstration --> [NPM Test](https://drive.google.com/file/d/19ACxKJwXRPNAO6BeA7cA-AHESVKO9yhL/view)
+Click here to view video demonstration --> [NPM Test](https://drive.google.com/file/d/1m3_2JLhmqs00szSXi6thPzPnZbnA9N_D/view)
 
-Click here to view video demonstration --> [Building Team Generator](https://drive.google.com/file/d/1feJSxpJFUvFykoYKVuTkv5YyKnoO_yxO/view)
+Click here to view video demonstration --> [Building Team Generator](https://drive.google.com/file/d/1Ix-IOOhlki3v9doG72gH0-Dd_nfbUvAM/view)
 
 
 🔭 [Deployment Website](https://jonjon50.github.io/Team-Profile-Generator/) 🔭
