@@ -36,7 +36,6 @@ const questions = async () => {
     },
   ]);
 ;
-// console.log()answers
 //  manager selected, answer these questions
 if (answers.role === "Manager") {
   const managerAns = await inquirer.prompt([
@@ -57,15 +56,7 @@ if (answers.role === "Manager") {
     newStaffMemberData.push(newManager);
   promptQuestions()
   })
-//  // const newManager = new Manager(
-//    // answers.name,
-//     answers.id,
-//     answers.email,
-//     answers.officeNumber
-//   );
-//   newStaffMemberData.push(newManager);
-// promptQuestions()
-  // if engineer selected answer these set questions
+
 } else if (answers.role === "Engineer") {
   const githubAns = await inquirer.prompt([
     {

@@ -6,23 +6,23 @@ const generateHTML = (answersArr) => {
       case "Engineer":
         newCard += `
   <!-- Engineer card -->
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h3 class="card-title text-center" id="name">${answersArr[i].name}</h3>
-      <h5 id="role" class="text-center bg-light text-wrap rounded-pill"><i class="fas fa-user-ninja"></i> ${answersArr[
+        <div class="card" style="width: 18rem;">
+        <div class="card-body">
+         <h3 class="card-title text-center" id="name">${answersArr[i].name}</h3>
+         <h5 id="role" class="text-center bg-light text-wrap rounded-pill"><i class="fas fa-user-ninja"></i> ${answersArr[
         i
       ].getRole()}</h5>
     </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item" id="id">ID: ${answersArr[i].id}</li>
-      <li class="list-group-item" id="email"><a href="mailto:${
+         <ul class="list-group list-group-flush">
+         <li class="list-group-item" id="id">ID: ${answersArr[i].id}</li>
+         <li class="list-group-item" id="email"><a href="mailto:${
         answersArr[i].email
       }">Email: ${answersArr[i].email}</a></li>
-      <li class="list-group-item" id="github"><a href="https://github.com/${
+         <li class="list-group-item" id="github"><a href="https://github.com/${
         answersArr[i].github
       }" target="_blank">Github: ${answersArr[i].github}</a></li>
-    </ul>
-  </div>`;
+       </ul>
+    </div>`;
 
         employeeCard.push(newCard);
         break;
@@ -30,19 +30,19 @@ const generateHTML = (answersArr) => {
       case "Intern":
         newCard += `   
   <!-- Intern card -->
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h3 class="card-title text-center" id="name">${answersArr[i].name}</h3>
-      <h5 id="role" class="text-center bg-light text-wrap rounded-pill"><i class="fas fa-user-graduate"></i> ${answersArr[
+       <div class="card" style="width: 18rem;">
+       <div class="card-body">
+        <h3 class="card-title text-center" id="name">${answersArr[i].name}</h3>
+        <h5 id="role" class="text-center bg-light text-wrap rounded-pill"><i class="fas fa-user-graduate"></i> ${answersArr[
         i
       ].getRole()}</h5>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item" id="id">ID: ${answersArr[i].id}</li>
-      <li class="list-group-item" id="email"><a href="mailto:${
+       </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item" id="id">ID: ${answersArr[i].id}</li>
+        <li class="list-group-item" id="email"><a href="mailto:${
         answersArr[i].email
       }">Email: ${answersArr[i].email}</a></li>
-      <li class="list-group-item" id="school">School: ${
+    <li class="list-group-item" id="school">School: ${
         answersArr[i].school
       }</li>
     </ul>
